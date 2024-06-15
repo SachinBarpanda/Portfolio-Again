@@ -35,9 +35,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <RouterProvider router={router} /> */}
     <HashRouter>
+      <Routes>
+
         <Route path='/' element={<Home/>} exact/>
         <Route path='/admin' element={<Admin/>} exact/>
         <Route path='/admin-login' element={<Login/>} exact/>
+      </Routes>
     
     </HashRouter>
   </React.StrictMode>
