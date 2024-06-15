@@ -16,10 +16,12 @@ const router = createBrowserRouter([
         {
           path: '/',
           element: <Home />,
+
         },
         {
           path: '/admin',
-          element: <Admin />
+          element: <Admin />,
+          errorElement:<h1>Admin ke paas nahi jaa paa raha hai yeh</h1>
         },
         {
           path: '/admin-login',
