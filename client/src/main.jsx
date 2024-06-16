@@ -34,7 +34,7 @@ import Login from '../pages/Admin/Login.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <RouterProvider router={router} /> */}
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
 
         <Route path='/' element={<Home/>} exact/>
@@ -42,6 +42,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/admin-login' element={<Login/>} exact/>
       </Routes>
     
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 )
