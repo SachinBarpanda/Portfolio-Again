@@ -7,34 +7,34 @@ import Home from '../pages/Home/Home.jsx'
 import Admin from '../pages/Admin/Admin.jsx'
 import Login from '../pages/Admin/Login.jsx'
 
-// const router = createHashRouter([
-//   {
-//     path: '/',
-//     element: <App />,
-//     children:
-//       [
-//         {
-//           path: '/',
-//           element: <Home />,
+const router = createHashRouter([
+  {
+    path: '/',
+    element: <App />,
+    children:
+      [
+        {
+          path: '/',
+          element: <Home />,
 
-//         },
-//         {
-//           path: '/admin',
-//           element: <Admin />,
-//           errorElement:<h1>Admin ke paas nahi jaa paa raha hai yeh</h1>
-//         },
-//         {
-//           path: '/admin-login',
-//           element: <Login />
-//         },
-//       ]
-//   },
-// ])
+        },
+        {
+          path: '/admin',
+          element: <Admin />,
+          errorElement:<h1>Admin ke paas nahi jaa paa raha hai yeh</h1>
+        },
+        {
+          path: '/admin-login',
+          element: <Login />
+        },
+      ]
+  },
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <RouterProvider router={router} /> */}
-    <BrowserRouter>
+    <RouterProvider router={router} />
+    {/* <HashRouter>
       <Routes>
 
         <Route path='/' element={<Home/>} exact/>
@@ -42,6 +42,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/admin-login' element={<Login/>} exact/>
       </Routes>
     
-    </BrowserRouter>
+    </HashRouter> */}
   </React.StrictMode>
 )
